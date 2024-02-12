@@ -6,6 +6,17 @@ const messages = [
   "Invest your new income 🤑",
 ];
 
+// export default function App() {
+//   return (
+//     <div>
+//       <Steps />
+//       <Steps />
+//     </div>
+//   );
+// }
+
+//function Steps() {}
+
 export default function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
@@ -19,7 +30,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div>
       {/*sets a button that closes and opens our sites content on click*/}
       <button className="close" onClick={() => setIsOpen((is) => !is)}>
         &times;
@@ -53,6 +64,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
